@@ -1,0 +1,32 @@
+<ion-view view-title="Manejos">
+	<!--header buttons -->
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon" ></button>
+	</ion-nav-buttons>
+
+	<ion-nav-buttons side="primary">
+		<button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">
+			Voltar
+		</button>
+	</ion-nav-buttons>
+
+	<!-- barra de pesquisa-->
+	<div class="bar bar-subheader item-input-inset bar-light" id="search">
+		<label class="item-input-wrapper">
+			<i class="icon ion-search placeholder-icon"></i>
+			<input type="search" ng-model="query" placeholder="Procurar...">
+		</label>
+	</div>
+
+	<!-- conteúdo da página -->
+	<ion-content class="has-subheader">
+		<ion-list >
+			<ion-item ng-repeat='manejo in manejos | filter: query' class="item-thumbnail-left item-icon-right item-text-wrap" href="">
+				<img class="imagem" data-ng-src="{{manejo.imagem[0]}}" alt="manejo">
+				<h2>{{manejo.nome}}</h2>
+				<p>{{manejo.resumo}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+
+</ion-view>

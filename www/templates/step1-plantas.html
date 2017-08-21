@@ -1,0 +1,30 @@
+<ion-view view-title="Plantas">
+
+	<!--header buttons -->
+	<ion-nav-buttons side="primary">
+		<button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">
+			Voltar
+		</button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="secondary">
+		<button class="button button-clear" ng-click = "openPopover($event)">
+			<i class="ion-help-circled"></i>
+		</button>
+	</ion-nav-buttons>
+
+	<!--conteúdo da página -->
+	<ion-content class="content">
+		<ion-list >
+			<ion-item class="item-divider item-text-wrap">
+				Escolha sua espécie/tipo de plantação de maça.
+			</ion-item>
+			<ion-item class="item-thumbnail-left item-icon-right item-text-wrap item" ng-repeat='planta in plantas' href="#/steps/step2/{{$index}}" ng-click="toStep2($index)">
+				<img class="imagem" data-ng-src="{{planta.imagem[0]}}" alt="Something">
+				<h2>{{planta.nome}}</h2>
+				<p>{{planta.resumo}}</p>
+
+			</ion-item>
+		</ion-list>
+	</ion-content>
+
+</ion-view>

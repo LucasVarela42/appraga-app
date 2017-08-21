@@ -1,0 +1,234 @@
+<ion-view view-title="Caldas e defensivos naturais">
+
+	<!--header buttons -->
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon" ></button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="primary">
+		<button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">
+			Voltar
+		</button>
+	</ion-nav-buttons>
+
+	<!--conteúdo da página -->
+	<ion-content>
+		<ion-list>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Um pouco de história!</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(0)"></button>
+					</div>
+				</ion-item>
+				<ion-item class="item-text-wrap animate-show-hide" ng-hide="hide[0]">
+					<p>Possivelmente a calda bordalesa foi descoberta ao acaso por agricultores franceses no século XIX, que aplicavam água de cal nas videiras para controlar doenças.
+						<br>
+						Os agricultores observaram que, quando a calda era preparada em tachos de cobre, o controle das doenças era maior, e assim começaram a fazer a diluição de sulfato de cobre e cal com água.
+						<br>
+						A calda bordalesa pode ser utilizada em hortas e pomares no manejo de doenças causadas por fungos e tem um efeito indireto sobre bacterioses e na adubação das plantas.
+					</p>
+				</ion-item>
+			</div>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Ingredientes</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(1)"></button>
+					</div>
+				</ion-item>
+				<div class="animate-show-hide" ng-hide="hide[1]">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>Preparo de 20 litros de calda bordalesa a 1%:</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>200 g (± 6 colheres sopa cheia) de sulfato de cobre;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>200 g (± 11 colheres sopa cheia) de cal virgem;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>20 litros de água.</p>
+					</ion-item>
+					<div class="card">
+						<ion-item class="item item-text-wrap">
+							<h3>O ideal é usar a cal virgem. Caso necessite substituir, use 300 g de cal hidratada.</h3>
+						</ion-item>
+					</div>
+					<div class="imagem"> <img src="img/calda-bordalesa-passo-1.png"> </div>
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Importante!</h3>
+						</ion-item>
+						<!-- <ion-item class=" item-icon-left item-text-wrap"> -->
+						<div class="list">
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>O uso de sulfato de cobre é proibido em pós-colheita.</p>
+							</ion-item>
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>A quantidade máxima permitida na legislação orgânica é de 6 kg de cobre/ha/ano.</p>
+							</ion-item>
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>Os produtores orgânicos devem consultar a OCS ou OAC, caso seu uso não estiver previsto no plano de manejo orgânico da propriedade para o controle proposto.</p>
+							</ion-item>
+						</div>
+					</div>
+				</div>
+				<!-- </ion-item> -->
+			</div>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Como preparar a calda bordalesa</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(2)"></button>
+					</div>
+				</ion-item>
+				<div class="animate-show-hide" ng-hide="hide[2]">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>1° Passo: diluição do sulfato de cobre.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Pegue o sulfato de cobre de 4 a 24 horas antes do inicio do preparo, e coloque-o dentro de um pano, na forma de um saquinho.</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Em seguida, amarre o saquinho na ponta de uma vara e mergulha-se em ± 5 litros de água fria ou morna, o que facilita a diluição.</p>
+						<!-- </div> -->
+					</ion-item>
+
+					<ion-item class="item-divider item-text-wrap">
+						<h3>2° Passo: preparo do leite de cal.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Coloque a cal em 2 litros de água e misture bem, formando o “leite de cal”.</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Em seguida, amarre o saquinho na ponta de uma vara e mergulha-se em ± 5 litros de água fria ou morna, o que facilita a diluição.</p>
+						<!-- </div> -->
+					</ion-item>
+					<div class="imagem"> <img src="img/calda-bordalesa-passo-2.png"> </div>
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Cuidado:</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>O cal esquenta e pode queimar durante o preparo. <br>
+								O leite de cal pode entupir os bicos do pulvarizador. <br>
+								Para evitar, a sugestão é coar o leite de cal em um pano.</h3>
+							</ion-item>
+						</div>
+
+						<ion-item class="item-divider item-text-wrap">
+							<h3>3° Passo: mistura dos ingredientes.</h3>
+						</ion-item>
+						<ion-item class="item-icon-left item-text-wrap">
+							<!-- <div class="item  item-text-wrap"> -->
+							<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+							<p>Na sequência, derrame vagarosamente o sulfato de cobre sobre o leite de cal. Ou seja, “pinte o branco com azul” para então reduzir a precipitação da calda.</p>
+							<!-- </div> -->
+						</ion-item>
+						<div class="imagem"> <img src="img/calda-bordalesa-passo-3.png"> </div>
+						<div class="card">
+							<ion-item class="item-divider item-text-wrap">
+								<h3>Importante!</h3>
+							</ion-item>
+							<ion-item class="item item-text-wrap">
+								<h3>A mistura deve ser sempre realizada colocando o sulfato de cobre (azul) na cal (branca) e nunca ao contrario, pois a reação que ocorrera formará uma pasta, perdendo sua qualidade.</h3>
+							</ion-item>
+						</div>
+
+						<ion-item class="item-divider item-text-wrap">
+							<h3>4° Passo: verificação da acidez da calda bordalesa.</h3>
+						</ion-item>
+						<ion-item class="item-icon-left item-text-wrap">
+							<!-- <div class="item  item-text-wrap"> -->
+							<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+							<p>A calda bordalesa deve ficar neutra ou ligeiramente alcalina, para não queimar as plantas após a sua aplicação.</p>
+							<!-- </div> -->
+						</ion-item>
+
+
+						<div class="imagem"> <img src="img/calda-bordalesa-passo-4.png" width="380px"> </div>
+						<div class="card">
+							<ion-item class="item-divider item-text-wrap">
+								<h3>Importante!</h3>
+							</ion-item>
+							<ion-item class="item item-text-wrap">
+								<h3>Use a calda bordalesa logo após o preparo ou em até 3 dias.</h3>
+							</ion-item>
+							<ion-item class="item item-text-wrap">
+								<h3>Evite o contato da calda bordalesa com a pele e olhos.</h3>
+							</ion-item>
+							<ion-item class="item item-text-wrap">
+								<h3>Aplique a calda com temperaturas amenas (temperaturas nem muito quente e nem muito frias).</h3>
+							</ion-item>
+						</div>
+					</div>
+				</div>
+		</ion-list>
+	</ion-content>
+
+
+
+						<!-- <div class="card">
+						<ion-item class="item-divider item-text-wrap">
+						<h3>Dica agroecológica!</h3>
+					</ion-item>
+					<ion-item class="item-divider item-text-wrap">
+					<h3>Como é possivel saber se a calda esta pronta para o uso?</h3>
+				</ion-item>
+				<ion-item class="item item-text-wrap">
+				<ion-item class="item item-text-wrap">
+				<h3>Mergulhe um ferro (faca, por exemplo) na calda bordalesa por 3 minutos;</h3>
+			</ion-item>
+			<ion-item class="item item-text-wrap">
+			<h3>Se o ferro escurecer ou ficar vermelho significa que a calda esta àcida;</h3>
+		</ion-item>
+		<ion-item class="item item-text-wrap">
+		<h3>Então, acrescente um punhado de cal;</h3>
+	</ion-item>
+	<ion-item class="item item-text-wrap">
+	<h3>Repita o teste com o ferro até não ficar mais escuro.</h3>
+	</ion-item>
+	</ion-item>
+	</div>
+
+	<div class="card">
+	<ion-item class="item-divider item-text-wrap">
+	<h3>Dica agroecológica!</h3>
+	</ion-item>
+	<ion-item class="item item-text-wrap">
+	<h3>Após côa-se a calda;</h3>
+	</ion-item>
+	<ion-item class="item item-text-wrap">
+	<h3>Coloca-se em um pulverizador;</h3>
+	</ion-item>
+	<ion-item class="item item-text-wrap">
+	<h3>Aplica-se em pomares ou hortaliças;</h3>
+	</ion-item>
+	</div>
+
+	<div class="card">
+	<ion-item class="item-divider item-text-wrap">
+	<h3>Dica agroecológica!</h3>
+	</ion-item>
+	<ion-item class="item item-text-wrap">
+	<h3>Ver as indicações de uso da calda bordalesa nas fichas de APLICAÇÃO DE CALDA BORDALESA EM HORTALIÇAS E FRUTIFERAS.</h3>
+	</ion-item>
+	</div> -->
+
+</ion-view>

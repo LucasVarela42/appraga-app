@@ -1,0 +1,35 @@
+<ion-view view-title="Página inicial">
+	<!--header buttons -->
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon" ></button>
+	</ion-nav-buttons>
+
+	<!--conteúdo da página -->
+	<ion-content class="content-home">
+		<h2 class="titulo-principal">Bem-vindo ao APPraga!</h2>
+		<div class="padding">
+
+			<div class="texto-home">
+				<p>
+					Selecione uma das abas no inferior da tela, ou clique em começar!
+				</p>
+			</div>
+			<br>
+			<div class="buttons-home responsive-sm">
+				<button  ng-click="abrirTutorial()" class="button button-balanced icon-right ion-chevron-right button-block green-color">
+					Como usar?
+				</button>
+				<button ng-click="abrirConceitos()" class="button button-balanced icon-right ion-chevron-right button-block green-color">
+					Conceitos e definições
+				</button>
+				<button ng-click="abrirCaldasDefensivos()" class="button button-balanced icon-right ion-chevron-right button-block green-color">
+					Caldas e defensivos naturais
+				</button>
+				<button ng-click="comecar()" class="button button-balanced icon-right ion-chevron-right button-block green-color">
+					Começar!
+				</button>
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

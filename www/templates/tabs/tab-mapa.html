@@ -1,0 +1,19 @@
+<ion-view title="Mapa">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon" ></button>
+  </ion-nav-buttons>
+  <ion-content>
+    <p class="loading">O mapa está carregando, por favor aguarde...<br>
+      Não esqueça de ativar o GPS do seu celular.</p>   <!-- GAMBIARRA FUDIDA AQUI -->
+
+      <div id="floating-panel">
+        <button class="button button-small" ng-click="openPopover($event)">Opções</button>
+      </div>
+      <!-- <div id="dados"> -->
+      <!-- Distância: {{distancia}}<br> Tempo estimado: {{tempo}} -->
+      <!-- THIS AIN'T WORKING PROPERLY-->
+      <!-- </div> -->
+      <div id="map" data-tap-disabled="true" class="mapa"></div>
+      <!-- O MAPA ITSELF -->
+    </ion-content>
+  </ion-view>

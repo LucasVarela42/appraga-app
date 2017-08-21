@@ -1,0 +1,252 @@
+<ion-view view-title="Caldas e defensivos naturais">
+
+	<!--header buttons -->
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon" ></button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="primary">
+		<button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">
+			Voltar
+		</button>
+	</ion-nav-buttons>
+
+	<!--conteúdo da página -->
+	<ion-content>
+		<ion-list>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Um pouco de história!</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(0)"></button>
+					</div>
+				</ion-item>
+				<ion-item class="item-text-wrap animate-show-hide" ng-hide="hide[0]">
+					<p>A calda sulfocálcica primeiramente foi usada para banhar animais contra a sarna no século XIX, mas agora encontra também outras utilidades.
+						<br/>
+						A calda sulfocálcica hoje é usada no controle de fungos, ácaros, cochonilhas e outros insetos sugadores de hortas e de pomares.
+						<br/>
+						Possui também um efeito de adubação nas plantas e apresenta dois elementos importantes: o enxofre e o cálcio.
+					</p>
+				</ion-item>
+			</div>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Ingredientes</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(1)"></button>
+					</div>
+				</ion-item>
+				<div class="animate-show-hide" ng-hide="hide[1]">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>preparo de 10 litros de calda sulfocálcica:</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>2 kg de enxofre;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>1 kg de cal virgem;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>10 litros de água;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>2 vasilhames de ferro ou latão.</p>
+					</ion-item>
+					<!-- <div class="card">
+						<ion-item class="item item-text-wrap">
+							<h3>O ideal é usar a cal virgem. Caso necessite substituir, use 300 g de cal hidratada.</h3>
+						</ion-item>
+					</div> -->
+					<!-- <div class="imagem"> <img src="img/passo-1.png"> </div> -->
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Importante!</h3>
+						</ion-item>
+						<!-- <ion-item class=" item-icon-left item-text-wrap"> -->
+						<div class="list">
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>Durante o preparo da calda sulfocálcica, atente para a proteção dos olhos, nariz, boca e da pele. É preciso usar equipamentos de proteção individual.</p>
+							</ion-item>
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>A família das cucurbitáceas (pepino, melancia, melão e outros) e plantas em florescimento são sensíveis à calda sulfocálcica.</p>
+							</ion-item>
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>Produtores orgânicos devem consultar a OCS ou OAC, caso seu uso não esteja previsto no plano de manejo orgânico da propriedade para o controle proposto.</p>
+							</ion-item>
+						</div>
+					</div>
+				</div>
+				<!-- </ion-item> -->
+			</div>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Como preparar a calda sulfocálcica</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(2)"></button>
+					</div>
+				</ion-item>
+				<div class="animate-show-hide" ng-hide="hide[2]">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>1° Passo: diluição do enxofre e da cal.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Em um vasilhame de ferro ou latão, coloque para ferver 20 litros de agua (A).</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>No outro vasilhame, queime a cal em 1 litro de água morna (B).</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>O enxofre é diluido em um balde com água morna (C).</p>
+						<!-- </div> -->
+					</ion-item>
+					<div class="imagem"> <img src="img/calda-sulfocalcica-passo-1a.png" width="380px"> </div>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>No momento em que a cal apagar (parar de borbulhar), aumente o fogo e aos poucos coloque a mistura de enxofre.</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Acrescente então 10 litros de água fervente e faça uma marca no vasilhame, na altura dos 10 litros.</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Na medida em que a água evaporar, recoloque mais água na altura marcada no vasilhame, deixando sempre 10 litros de calda.</p>
+						<!-- </div> -->
+					</ion-item>
+					<div class="imagem"> <img src="img/calda-sulfocalcica-passo-1b.png" width="380px"> </div>
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Importante!</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>É preciso manter o fogo forte o tempo todo, para garantir a qualidade da calda.<br/>
+								 Cuidado com os respingos da calda sobre o corpo.</h3>
+							</ion-item>
+						</div>
+
+					<ion-item class="item-divider item-text-wrap">
+						<h3>2° Passo: revolvimento da calda.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>É preciso mexer durante todo o tempo de preparo (aproximadamente 1 hora).</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>O volume da calda em fervura deve ser sempre de 10 litros.</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Deve ocorrer a reposição da água evaporada pelo calor, colocando água até o sinal marcado na vasilha.</p>
+						<!-- </div> -->
+					</ion-item>
+					<!-- <div class="imagem"> <img src="img/passo-2.png"> </div>
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Cuidado:</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>O cal esquenta e pode queimar durante o preparo. <br>
+								O leite de cal pode entupir os bicos do pulvarizador. <br>
+								Para evitar, a sugestão é coar o leite de cal em um pano.</h3>
+							</ion-item>
+						</div> -->
+
+						<ion-item class="item-divider item-text-wrap">
+							<h3>3° Passo: determinação do ponto da calda.</h3>
+						</ion-item>
+						<ion-item class="item-icon-left item-text-wrap">
+							<!-- <div class="item  item-text-wrap"> -->
+							<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+							<p>Quando a calda ficar grossa e adquirir coloração avermelhada, estará pronta.</p>
+							<!-- </div> -->
+						</ion-item>
+						<ion-item class="item-icon-left item-text-wrap">
+							<!-- <div class="item  item-text-wrap"> -->
+							<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+							<p>Deixe esfriar para o uso ou armazenagem.</p>
+							<!-- </div> -->
+						</ion-item>
+						<div class="imagem"> <img src="img/calda-sulfocalcica-passo-3.png">
+						<!-- <div class="imagem"> <img src="img/passo-3.png"> </div>
+						<div class="card">
+							<ion-item class="item-divider item-text-wrap">
+								<h3>Importante!</h3>
+							</ion-item>
+							<ion-item class="item item-text-wrap">
+								<h3>A mistura deve ser sempre realizada colocando o sulfato de cobre (azul) na cal (branca) e nunca ao contrario, pois a reação que ocorrera formará uma pasta, perdendo sua qualidade.</h3>
+							</ion-item>
+						</div> -->
+
+						<ion-item class="item-divider item-text-wrap">
+							<h3>4° Passo: Preparo para o uso.</h3>
+						</ion-item>
+						<ion-item class="item-icon-left item-text-wrap">
+							<!-- <div class="item  item-text-wrap"> -->
+							<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+							<p>Coe a calda em um pano e verifique a graduação da calda com o uso de um areômetro de Baumé (Bé).</p>
+							<!-- </div> -->
+						</ion-item>
+						<div class="card">
+							<ion-item class="item item-text-wrap">
+								<h3>Ver como utilizar na ficha de APLICAÇÃO DE CALDA SULFOCÁLCICA</h3>
+							</ion-item>
+						</div>
+
+						<!-- <div class="imagem"> <img src="img/passo-4.png" width="380px"> </div>
+						<div class="card">
+							<ion-item class="item-divider item-text-wrap">
+								<h3>Importante!</h3>
+							</ion-item>
+							<ion-item class="item item-text-wrap">
+								<h3>Use a calda bordalesa logo após o preparo ou em até 3 dias.</h3>
+							</ion-item>
+							<ion-item class="item item-text-wrap">
+								<h3>Evite o contato da calda bordalesa com a pele e olhos.</h3>
+							</ion-item>
+							<ion-item class="item item-text-wrap">
+								<h3>Aplique a calda com temperaturas amenas (temperaturas nem muito quente e nem muito frias).</h3>
+							</ion-item>
+						</div> -->
+
+						<ion-item class="item-divider item-text-wrap">
+							<h3>5° Passo: armazenagem.</h3>
+						</ion-item>
+						<ion-item class="item-icon-left item-text-wrap">
+							<!-- <div class="item  item-text-wrap"> -->
+							<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+							<p>A calda sulfocálcica pode ser armazenada em vidro ou plástico escuro e bem vedado por até 6 meses.</p>
+							<!-- </div> -->
+						</ion-item>
+
+					</div>
+				</div>
+		</ion-list>
+	</ion-content>
+
+</ion-view>

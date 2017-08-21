@@ -1,0 +1,39 @@
+
+[
+  {"nome":"Árvore que dá maça",
+    "texto1": "É uma árvore, que dá maçã (também conhecida como macieira)",
+    "texto2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "texto3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "id":"1",
+    "pragas":[1,2,3]},
+
+    {"nome":"Árvore que dá uva",
+    "texto1": "É uma árvore, que dá uva (também conhecida como videira)",
+    "texto2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "texto3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "id":"2",
+    "pragas":[2,4,5]},
+
+    {"nome":"Árvore que dá maça 2",
+    "texto1": "É uma árvore, que dá maçã (também conhecida como macieira)",
+    "texto2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "texto3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "id":"3",
+    "pragas":[2,3]},
+
+    {"nome":"Árvore que dá maça 3",
+    "texto1": "É uma árvore, que dá maçã (também conhecida como macieira)",
+    "texto2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "texto3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "id":"4",
+    "pragas":[1,2,4]},
+
+    {"nome":"Árvore que dá uva 2",
+    "texto1": "É uma árvore, que dá uva (também conhecida como videira)",
+    "texto2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "texto3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia aliquam mattis. Nulla facilisi. Suspendisse vitae orci fermentum, scelerisque tellus vitae, porttitor ligula. Etiam a mi pellentesque, pulvinar quam quis, mattis dolor. In a ultrices augue. Curabitur condimentum ligula at rhoncus tempus. Sed molestie faucibus nisi, vitae lobortis lectus ullamcorper eget.",
+    "id":"5",
+    "pragas":[1,4,5]}
+]
+
+

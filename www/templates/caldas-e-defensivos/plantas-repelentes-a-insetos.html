@@ -1,0 +1,165 @@
+<ion-view view-title="Plantas repelentes e insetos">
+
+	<!--header buttons -->
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon" ></button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="primary">
+		<button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">
+			Voltar
+		</button>
+	</ion-nav-buttons>
+
+	<!--conteúdo da página -->
+	<ion-content>
+		<ion-list>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Um pouco de história!</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(0)"></button>
+					</div>
+				</ion-item>
+				<ion-item class="item-text-wrap animate-show-hide" ng-hide="hide[0]">
+					<p>O controle da população de insetos nas lavouras pode ser feito pelo uso de plantas
+						repelentes que possuem sabor e ou cheiro forte e, por isso, impedem a aproximação das pragas
+						que causam danos às culturas.
+						<br/>
+						As plantas podem ser aromáticas, condimentares e medicinais, tais como: salsa, cravo
+						de defunto, cebolinha, cebola, coentro, alho, alho-porró, salsão, louro, hortelã-pimenta, arruda,
+						camomila, manjericão e orégano. Essas plantas podem ser usadas em consórcio, na rotação de
+						culturas ou ainda como extratos.
+					</p>
+				</ion-item>
+			</div>
+
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Sugestões de plantas repelentes</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(1)"></button>
+					</div>
+				</ion-item>
+				<div class="item-text-wrap animate-show-hide" ng-hide="hide[1]">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>Sugestões de plantas repelentes a ser usadas em consórcio:</h3>
+					</ion-item>
+
+					<ion-item class="item-text-wrap item-table">
+						<div class="row">
+						   <div class="col">Planta em consórcio</div>
+						   <div class="col">Inseto prejudicial que repele</div>
+							 <div class="col">Cultura</div>
+						</div>
+						<div class="row">
+						   <div class="col">Cravo de defunto</div>
+						   <div class="col">Broca-pequena (Neoleucinodes elegantalis) Broca-grande (Helicoverpa zea)</div>
+							 <div class="col">Tomate</div>
+						 </div>
+						 <div class="row">
+ 						   <div class="col">Cravo de defunto, coentro ou arruda.</div>
+ 						   <div class="col">Lagartas desfolhadoras (Plutella xylostella, Trichoplusia ni, Ascia monuste orseis)</div>
+ 							 <div class="col">Repolho, couve, couve-flor</div>
+ 						 </div>
+						 <div class="row">
+ 						   <div class="col">Alho</div>
+ 						   <div class="col">Insetos nocivos em geral</div>
+ 							 <div class="col">Tomate</div>
+ 						 </div>
+						 <div class="row">
+ 						   <div class="col">Alecrim ou tomilho</div>
+ 						   <div class="col">Borboleta da couve (Ascia monuste orseis)</div>
+ 							 <div class="col">Couve de folha</div>
+ 						 </div>
+						 <div class="row">
+ 						   <div class="col">Salvia</div>
+ 						   <div class="col">Mariposa do repolho (Trichoplusia ni)</div>
+ 							 <div class="col">Repolho</div>
+ 						 </div>
+						 <div class="row">
+ 						   <div class="col">Hortelã, manjericão e alfavaca</div>
+ 						   <div class="col">Borboletas, mariposas e formigas</div>
+ 							 <div class="col">Bordas das plantações em geral</div>
+ 						 </div>
+						 <div class="row">
+ 						   <div class="col">Mastruz</div>
+ 						   <div class="col">Pulgões e outros insetos</div>
+ 							 <div class="col">Diversas</div>
+ 						 </div>
+						 <div class="row">
+ 						   <div class="col">Girassol*</div>
+ 						   <div class="col">Vários insetos</div>
+ 							 <div class="col">Diversas</div>
+ 						 </div>
+						 <p>*Suas folhas e flores também atraem insetos polinizadores.</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>O controle pode ser realizado também pelo uso de extratos (soluções) de plantas, aplicados nos insetos.</p>
+					</ion-item>
+				</div>
+			</div>
+
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Ingredientes</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(2)"></button>
+					</div>
+				</ion-item>
+				<div class="item-text-wrap animate-show-hide" ng-hide="hide[2]">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>Extrato de plantas repelentes:</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>15 litros de água;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>10 colheres de sopa de sabão derretido ou cinza.</p>
+					</ion-item>
+				</div>
+			</div>
+
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Como preparar a solução</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(3)"></button>
+					</div>
+				</ion-item>
+				<div class="item-text-wrap animate-show-hide" ng-hide="hide[3]">
+
+					<ion-item class="item-divider item-text-wrap">
+						<h3>1° Passo: extração das substâncias repelentes das plantas.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Pegar 1 kg de folhas de plantas de cheiro forte e deixar de molho em 5 litros de água durante 10 dias.</p>
+					</ion-item>
+					<div class="imagem"> <img src="img/plantas-repelentes-a-insetos-passo-1.png" width="380px"> </div>
+
+					<ion-item class="item-divider item-text-wrap">
+						<h3>2° Passo: adição do sabão a solução.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Depois de 10 dias, retirar 1 litro da solução e acrescentar 10 colheres (sopa) de sabão derretido ou 10 colheres de cinza. Após isso, colocar mais 10 litros de água.</p>
+					</ion-item>
+					<div class="imagem"> <img src="img/plantas-repelentes-a-insetos-passo-2.png" width="380px"> </div>
+
+					<ion-item class="item-divider item-text-wrap">
+						<h3>3° Passo: pulverização.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Depois de diluída a solução, pulverizar nas plantas que estiverem sendo atacadas.</p>
+					</ion-item>
+
+				</div>
+			</div>
+
+		</ion-list>
+	</ion-content>
+</ion-view>

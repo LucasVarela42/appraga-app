@@ -1,0 +1,188 @@
+<ion-view view-title="Leite de vaca para o controle do oídio">
+
+	<!--header buttons -->
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon" ></button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="primary">
+		<button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">
+			Voltar
+		</button>
+	</ion-nav-buttons>
+
+	<!--conteúdo da página -->
+	<ion-content>
+		<ion-list>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Um pouco de história!</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(0)"></button>
+					</div>
+				</ion-item>
+				<ion-item class="item-text-wrap animate-show-hide" ng-hide="hide[0]">
+					<p>O oídio (Sphaerotheca fuliginea) é uma das principais doenças causadas por fungos e atua
+						prejudicando a produtividade e a qualidade dos produtos agrícolas.
+						<br/>
+						O oídio é facilmente identificado, pois forma uma camada pulverulenta branca na superfície
+						da folha. Costumeiramente, os agricultores o chamam de “cinza das folhas”.
+						<br/>
+						O oídio ataca principalmente plantas da família das cucurbitaceas (abóbora, moranga,
+						pepino, melão, melancia e outros), mas também pode atingir o feijão, a vagem e outras plantas
+						cultivadas.
+						<br/>
+						Em algumas culturas, o leite fresco (cru) pode agir contra oídio, atuando como fungicida.
+					</p>
+				</ion-item>
+			</div>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Ingredientes</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(1)"></button>
+					</div>
+				</ion-item>
+				<div class="animate-show-hide" ng-hide="hide[1]">
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>1 litro de leite de vaca cru;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>10 litros de água.</p>
+					</ion-item>
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Importante!</h3>
+						</ion-item>
+						<!-- <ion-item class=" item-icon-left item-text-wrap"> -->
+						<div class="list">
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>Produtores orgânicos devem consultar a OCS ou OAC.</p>
+							</ion-item>
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>O leite de vaca pode ser usado desde que não contenha produtos não permitidos na
+								legislação de produção orgânica.</p>
+							</ion-item>
+						</div>
+					</div>
+				</div>
+				<!-- </ion-item> -->
+			</div>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Como preparar o fungicida à base de leite</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(2)"></button>
+					</div>
+				</ion-item>
+				<div class="animate-show-hide" ng-hide="hide[2]">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>1° Passo: mistura dos ingredientes.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Adicione o leite na água em um recipiente.</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Misture bem e pulverize nas culturas.</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Nesta ficha, sugere-se o preparo de 10 litros de calda de leite de vaca (ver tabela abaixo).
+							Para outros volumes, siga a proporção.</p>
+						<!-- </div> -->
+					</ion-item>
+					<div class="imagem"> <img src="img/leite-de-vaca-controle-de-oidio-passo-1.png" width="380px"></div>
+					<ion-item class="item-divider item-text-wrap">
+						<h3>2° Passo: aplicação foliar de 10 litros.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Pulverize preferencialmente no início ou final do dia sobre as plantas.</p>
+						<!-- </div> -->
+					</ion-item>
+
+					<ion-item class="item-divider item-text-wrap">
+						<h3>Tabela 1 – recomendação de aplicação de calda viçosa.</h3>
+					</ion-item>
+					<ion-item class="item-text-wrap item-table">
+						<div class="row">
+							 <div class="col">Cultura</div>
+							 <div class="col">Abobrinha e pepino</div>
+						</div>
+						<div class="row">
+							 <div class="col">Leite de vaca</div>
+							 <div class="col">500 ml a 1 litro</div>
+						 </div>
+						 <div class="row">
+ 							 <div class="col">Água</div>
+ 							 <div class="col">Completar com água até 10 litros</div>
+ 						 </div>
+						 <div class="row">
+								<div class="col">Quando aplicar?</div>
+								<div class="col">Uma vez por semana. A dose depende o nível de ataque do oídio. A dose deverá ser maior quando for maior a severidade.</div>
+							</div>
+					</ion-item>
+
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Dica!</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>O leite diluído a 10% na água mais a farinha de trigo atua como acaricida em algumas culturas como
+								a vagem e o morango.</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>Para uma mistura de 20 litros, use 18 litros de água mais 2 litros de leite mais 200 a 400 g de farinha
+							de trigo.</h3>
+						</ion-item>
+					</div>
+
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Importante!</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>A farinha de trigo deve ser misturada vagarosamente em um recipiente de 2 litros de água até ficar
+								completamente diluída, para que depois seja acrescentada ao pulverizador.</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>Esse detalhe fará com que não ocorra o entupimento do bico do pulverizador.</h3>
+						</ion-item>
+					</div>
+
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Dica Agroecológica!</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>Na aplicação do morangueiro, de preferência aplicar antes da floração.</h3>
+						</ion-item>
+					</div>
+
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Dica Agroecológica!</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>Para aumentar a eficiência do fungicida, alguns agricultores utilizam
+								20g de bicarbonato de sódio junto aos 20 litros de água e leite na ação contra o oídio.</h3>
+						</ion-item>
+					</div>
+
+					</div>
+				</div>
+		</ion-list>
+	</ion-content>
+
+</ion-view>

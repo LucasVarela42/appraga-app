@@ -1,0 +1,28 @@
+<ion-view view-title="Plantas">
+	<!--header buttons -->
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon" ></button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="primary">
+		<button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">
+			Voltar
+		</button>
+	</ion-nav-buttons>
+	<!-- barra de pesquisa-->
+	<div class="bar bar-subheader item-input-inset bar-light" id="search">
+		<label class="item-input-wrapper">
+			<i class="icon ion-search placeholder-icon"></i>
+			<input type="search" ng-model="query" placeholder="Procurar...">
+		</label>
+	</div>
+	<!-- conteúdo da página -->
+	<ion-content class="has-subheader">
+		<ion-list>
+			<ion-item ng-repeat='planta in plantas | filter: query' class="item-thumbnail-left item-icon-right item-text-wrap" href="#/detalhes-planta/{{$index}}">
+				<img class="imagem" data-ng-src="{{planta.imagem[0]}}" alt="planta">
+				<h2>{{planta.nome}}</h2>
+				<p>{{planta.resumo}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,373 @@
+/* Empty. Add your own CSS if you like */
+.insetos-conceitos{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.content-home {
+	background: url('../img/background2.jpg') no-repeat left center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.titulo-principal {
+	font-family: 'Belleza', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+	-webkit-box-shadow: inset 0px 200px 70px -170px rgba(0,0,0,0.8);
+	-moz-box-shadow: inset 0px 200px 70px -170px rgba(0,0,0,0.8);
+	box-shadow: inset 0px 200px 70px -170px rgba(0,0,0,0.8);
+}
+
+.row:nth-child(even) {
+
+  background-color:#f2f2f2;
+}
+.col {
+	text-align: center;
+	/*border: thin rgb(221, 221, 221) solid;*/
+}
+.item-table {
+	padding: 0;
+	font-size: 14px;
+}
+.item-content{
+		 padding-top: 16px !important;
+     padding-right: 16px !important;
+}
+
+.tutorial{
+	background-color: #234d20;
+	text-align: center;
+
+}
+.slide-text{
+	padding-top: 60px;
+
+}
+.slide-text > h1{
+	color: white;
+}
+
+.slide-text > h3{
+	color: white;
+}
+.slide-text > img{
+	size: auto;
+	border-radius: 10px;
+}
+
+#left{
+	margin-right: 5px;
+}
+
+#right{
+	margin-left: 5px;
+}
+
+.content{
+	/*background-color: #f0f7da;*/
+}
+.green-color{
+  background: #234d20 !important;
+}
+
+button.green-color{
+	color: white;
+}
+
+.bar {
+	border: none;
+	background-image: none !important;
+}
+
+/* mudar a cor da barra de tabs embaixo */
+.tabs-balanced > .tabs{
+	background-color: #234d20 !important;
+	border: none;
+	background-image: none !important;
+}
+
+#search{
+	background-color: #69994d !important;
+	-webkit-box-shadow: inset 0px 200px 50px -170px rgba(35,77,32,1);
+	-moz-box-shadow: inset 0px 200px 50px -170px rgba(35,77,32,1);
+	box-shadow: inset 0px 200px 50px -170px rgba(35,77,32,1);
+}
+
+/* mudar a cor do header */
+.bar-balanced{
+	background-color: #234d20 !important;
+}
+.div-imagem {
+	text-align: center;
+}
+.titulo{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+	background-color: #77ab59;
+}
+.bar-titulo {
+	text-align: center;
+	background-color: #69994d;
+}
+.bar-titulo  h1{
+	color: white;
+}
+.texto-home{
+	text-orientation: initial;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+.buttons-home{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imagem-praga{
+	height: 30%;
+	width: 30%;
+}
+.ion-help-circled{
+	font-size: 30px;
+	padding-right: 10px;
+}
+.imagem{
+	border-radius: 5px;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+/* detalhes praga */
+
+.imagem-praga-main{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.image-list-thumb {
+    padding: 2px 2px 2px 2px;
+    height: 100px;
+}
+
+.image-modal {
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.transparent {
+    background: black !important;
+}
+
+.fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+}
+
+/*mapa*/
+.cabecalho-lista{
+	text-align: center;
+	padding: 10px;
+	color: white;
+	background-color: #4c1818 !important;
+	font-weight: 500;
+}
+
+.iw-title {
+	 line-height: 20px;
+   font-weight: 400;
+   padding: 10px;
+   background-color: #4c1818 !important;
+   color: white;
+   margin: 1px;
+   border-radius: 2px 2px 0 0; /* De acordo com o arredondamento dos cantos da infowindow por padrão. */
+	 text-align: center;
+}
+
+.iw-content{
+	font-size: 20px;
+}
+
+.botaoinfowindow{
+	text-align: center;
+	padding: 20px;
+}
+
+.loading{
+	top:40%;
+	z-index: -3;
+	position: absolute;
+	text-align: center;
+	/*width: 100%;*/
+}
+
+#floating-panel {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  z-index: 5;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+}
+
+#dados{
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+}
+
+.animate-show-hide.ng-hide {
+  opacity: 0;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+  transition: all linear 0.2s;
+}
+
+.item.item-thumbnail-left h2 {
+	  text-align: left;
+		color: rgba(0,0,0,0.87);
+    margin: 0 0 2px 0;
+    font-size: 16px;
+    /*font-weight: normal;*/
+		font-weight: 400;
+		letter-spacing: 0.010em;
+		line-height: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item.item-thumbnail-left p {
+	text-align: left;
+	color: rgba(0,0,0,0.54);
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.010em;
+	margin: 0 0 0 0;
+	line-height: 1.2em;
+}
+
+.item p {
+	text-align: justify;
+	letter-spacing: 0.010em;
+	/*margin: 0 0 0 0;*/
+	/*line-height: 1.2em;*/
+}
+
+.tile-image {
+	align-items: center;
+	position: relative;
+	left: 0;
+	right: 0;
+}
+.tile-footer {
+	/*background: rgba(105, 153, 77, 0.5);*/
+	background: rgba(0, 0, 0, 0.5);
+	height: 36px;
+	/*bottom: 4px;*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.tile-footer h2 {
+	color: #fff;
+	margin: 8px 0 0 0;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+}
+
+.transparent {
+  background: transparent !important;
+}
+.image-modal {
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+}
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+}
+/*.slider-pager {
+	bottom: 36px;
+}*/
+.slider-pager-page {
+color: rgba(255, 255, 255, 0.9) !important;
+}
+
+p.info {
+  position: absolute;
+  bottom: 190px;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+/* Fix modal backdrop for smaller devices */
+@media (max-width: 679px) {
+  .active .modal-backdrop-bg {
+    opacity: .5;
+  }
+  .modal-backdrop-bg {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    background-color: #000;
+    opacity: 0;
+  }
+}

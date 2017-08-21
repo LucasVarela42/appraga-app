@@ -1,0 +1,40 @@
+<ion-view view-title="Pragas">
+
+	<!--header buttons -->
+	<ion-nav-buttons side="primary">
+		<button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">
+			Voltar
+		</button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="secondary">
+		<button class="button button-clear" >
+			<i class="ion-help-circled" ng-click="openPopover($event)"></i>
+		</button>
+	</ion-nav-buttons>
+
+	<!--conteúdo da página -->
+	<ion-content>
+		<ion-list >
+			<ion-item class="item-divider item-text-wrap">
+				Pragas que afetam a planta selecionada.
+			</ion-item>
+			<!-- <ion-item class="item-text-wrap" ng-hide="checkPraga()">
+			Não há pragas cadastradas nesta planta
+		</ion-item> -->
+		<ion-item ng-repeat='praga in plantaSelecionada.pragas' class="item-thumbnail-left item-icon-right item-text-wrap item" href="#/detalhes-praga/{{pragaIndex[$index]}}">
+			<img class="imagem" data-ng-src="{{praga.imagem[0]}}" alt="Something">
+			<h2>{{praga.nome}}</h2>
+			<p>{{praga.cientifico}}</p>
+		</ion-item>
+		<ion-item class="item-divider item-text-wrap">
+			Doenças que afetam a planta selecionada.
+		</ion-item>
+		<ion-item ng-repeat='doenca in plantaSelecionada.doencas' class="item-thumbnail-left item-icon-right item-text-wrap item" href="#/detalhes-doenca/{{doencaIndex[$index]}}">
+			<img class="imagem" data-ng-src="{{doenca.imagem[0]}}" alt="Something">
+			<h2>{{doenca.nome}}</h2>
+			<p>{{doenca.nomeCientifico}}</p>
+		</ion-item>
+	</ion-list>
+</ion-content>
+
+</ion-view>

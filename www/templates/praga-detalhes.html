@@ -1,0 +1,61 @@
+<ion-view view-title="Mais sobre">
+  <!--header buttons -->
+  <ion-nav-buttons side="primary">
+    <button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">Voltar</button>
+  </ion-nav-buttons>
+  <!--conteúdo da página-->
+  <ion-content class="padding">
+    <ion-list class="list-inset">
+      <ion-item class="item item-text-wrap" ng-repeat="praga in pragaDetalhada">
+        <div class="bar bar-header bar-titulo">
+          <h1 class="title">{{praga.nome}}</h1>
+        </div>
+        <br><br>
+        <div class="tile-image">
+          <div class="image">
+            <ion-slide-box on-slide-changed="slideChanged(index)" show-pager="true">
+                <ion-slide ng-repeat="image in imageSrc">
+                  <img data-ng-src="{{image}}" alt="praga" class="imagem-praga-main" ng-click="modalImage()" />
+                  <!-- <p class="info">{{image.info}}</p> -->
+                </ion-slide>
+              </ion-slide-box>
+            <!-- <img data-ng-src="{{praga.imagem[0]}}" alt="praga" class="imagem-praga-main" ng-click="modalImage(praga)"> -->
+          </div>
+          <div class="tile-footer">
+            <h2>{{praga.cientifico}}</h2>
+          </div>
+        </div>
+        <p>{{praga.descricao}}</p>
+
+        <!-- <div class="div-imagem">
+        <img src="img/praga.jpg" alt="Something" class="imagem-praga" ng-click="showImages($index)">
+        <img src="img/bug.jpg" alt="Something" class="imagem-praga" ng-click="showImages($index)">
+        <img src="img/bug.jpg" alt="Something" class="imagem-praga" ng-click="showImages($index)">
+      </div> -->
+      <!-- <br> -->
+
+    </ion-item>
+
+    <ion-item class="item item-text-wrap" ng-repeat="praga in pragaDetalhada">
+      <div class="bar bar-header bar-titulo">
+        <h1 class="title">Método de manejo</h1>
+      </div>
+      <br><br>
+      <p ng-bind-html="praga.descricaoManejo | linebreak | to_trusted"></p>
+    </ion-item>
+    <button class="button button-full green-color" ng-click="ocorrencia()">
+      Eu tive/tenho essa praga :(
+    </button>
+  </ion-list>
+
+  <!-- <script id="fullscreen-image.html" type="text/ng-template">
+      <div class="modal image-modal transparent" ng-click="closeModal()">
+          <ion-pane class="transparent">
+             <img ng-src="{{imageSrc.imagem}}" class="fullscreen-image"/>
+            <p class="info">{{imageSrc.info}}</p>
+          </ion-pane>
+      </div>
+  </script> -->
+
+</ion-content>
+</ion-view>

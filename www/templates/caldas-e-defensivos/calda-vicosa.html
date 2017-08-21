@@ -1,0 +1,206 @@
+<ion-view view-title="Caldas e defensivos naturais">
+
+	<!--header buttons -->
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon" ></button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="primary">
+		<button class="button icon-left ion-chevron-left button-clear" ng-click="voltar()">
+			Voltar
+		</button>
+	</ion-nav-buttons>
+
+	<!--conteúdo da página -->
+	<ion-content>
+		<ion-list>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Um pouco de história!</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(0)"></button>
+					</div>
+				</ion-item>
+				<ion-item class="item-text-wrap animate-show-hide" ng-hide="hide[0]">
+					<p>A calda viçosa foi desenvolvida pela Universidade Federal de Viçosa (MG) a partir da calda bordalesa, por isso a referência em seu nome.</p>
+				</ion-item>
+			</div>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Ingredientes</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(1)"></button>
+					</div>
+				</ion-item>
+				<div class="animate-show-hide" ng-hide="hide[1]">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>preparo de 20 litros da calda viçosa a 0,5%:</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>100 g de sulfato de cobre;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>100 g de cal virgem;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>160 g de sulfato de magnésio;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>40 g de sulfato de zinco;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>20 g de ácido bórico;</p>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-ios-sunny-outline" style="font-size:16px;"></i>
+						<p>20 litros de água.</p>
+					</ion-item>
+					<!-- <div class="card">
+						<ion-item class="item item-text-wrap">
+							<h3>O ideal é usar a cal virgem. Caso necessite substituir, use 300 g de cal hidratada.</h3>
+						</ion-item>
+					</div> -->
+					<!-- <div class="imagem"> <img src="img/passo-1.png"> </div> -->
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Importante!</h3>
+						</ion-item>
+						<!-- <ion-item class=" item-icon-left item-text-wrap"> -->
+						<div class="list">
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>O uso de sulfato de cobre é proibido em pós-colheita.</p>
+							</ion-item>
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>A quantidade máxima permitida na legislação orgânica é de 6 kg de cobre/ha/ano.</p>
+							</ion-item>
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>A utilização do sulfato de magnésio deve estar em conformidade coma legislação de produção orgânica</p>
+							</ion-item>
+							<ion-item class="item-icon-left item-text-wrap">
+								<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+								<p>Produtores orgânicos devem consultar a OCS ou OAC, caso seu uso não estiver previsto no plano de manejo orgânico da propriedade para o controle proposto.</p>
+							</ion-item>
+						</div>
+					</div>
+				</div>
+				<!-- </ion-item> -->
+			</div>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Como preparar a calda viçosa</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(2)"></button>
+					</div>
+				</ion-item>
+				<div class="animate-show-hide" ng-hide="hide[2]">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>1° Passo: preparo do leite de cal.</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Em um vasilhame, prepare o leite de cal misturando 100g da cal em 10 litros de água (pode usar garrafa PET como medida).</p>
+					</ion-item>
+					<!-- <div class="imagem"> <img src="img/calda-sulfocalcica-passo-1b.png" width="380px"> </div> -->
+					<div class="card">
+						<ion-item class="item-divider item-text-wrap">
+							<h3>Cuidado:</h3>
+						</ion-item>
+						<ion-item class="item item-text-wrap">
+							<h3>A cal em contato com a água esquenta e pode queimar.<br/>
+								O “leite de cal” pode entupir os bicos do pulverizador. <br/>
+								Para evitar isso, a sugestão é coar o leite de cal em um pano.</h3>
+							</ion-item>
+						</div>
+					<ion-item class="item-divider item-text-wrap">
+						<h3>2° Passo: dissolução dos sulfatos (sais).</h3>
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Em um outro vasillhame coloque 10L de água.</p>
+						<!-- </div> -->
+					</ion-item>
+					<ion-item class="item-icon-left item-text-wrap">
+						<!-- <div class="item  item-text-wrap"> -->
+						<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+						<p>Depois, ocorrerá a dissolução dos sais (acido bórico, sulfatos de zinco, magnésio e cobre). Coloque-os em um saco de pano, deixando de molho na água do vasilhame.</p>
+						<!-- </div> -->
+					</ion-item>
+
+						<ion-item class="item-divider item-text-wrap">
+							<h3>3° Passo: mistura dos ingredientes.</h3>
+						</ion-item>
+						<ion-item class="item-icon-left item-text-wrap">
+							<!-- <div class="item  item-text-wrap"> -->
+							<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+							<p>Despeje a mistura preparada no 2° passo sobre o leite de cal preparada no 1° passo.</p>
+							<!-- </div> -->
+						</ion-item>
+						<ion-item class="item-icon-left item-text-wrap">
+							<!-- <div class="item  item-text-wrap"> -->
+							<i class="icon ion-pin" style="font-size:16px; color:rgb(102, 102, 102);"></i>
+							<p>Deixe esfriar para o uso ou armazenagem.</p>
+							<!-- </div> -->
+						</ion-item>
+						<!-- <div class="imagem"> <img src="img/calda-sulfocalcica-passo-3.png"> -->
+						<div class="card">
+							<ion-item class="item-divider item-text-wrap">
+								<h3>Importante!</h3>
+							</ion-item>
+							<ion-item class="item item-text-wrap">
+								<h3>Não se pode alterar a ordem da mistura dos ingredientes, e nem fazer os passos de maneira diferente do que foi explicado acima, pois o produto perde a sua ação e eficiência.</h3>
+							</ion-item>
+						</div>
+
+					</div>
+				</div>
+			<div class="card">
+				<ion-item class="item-divider item-text-wrap titulo">
+					<div class="bar bar-header bar-titulo">
+						<h1 class="title">Como fazer a aplicação da calda viçosa</h1>
+						<button class="button button-light button-icon icon ion-arrow-down-b" style="color:#fff" ng-click="isHide(3)"></button>
+					</div>
+				</ion-item>
+				<div class="animate-show-hide" ng-hide="hide[3]">
+				<ion-item class="item-text-wrap ">
+					<p>A calda viçosa pode ser utilizada em hortas e pomares para o manejo de doenças causadas por fungos e para a adubação das plantas, pois contêm micronutrientes (boro, zinco) e macronutrientes (cálcio e magnésio). <br/>
+						A aplicação deve ser foliar, utilizando a calda sem diluição na água. A decisão do momento adequado de aplicação depende de observações feitas ao campo dos sintomas da doença. <br/>
+						É indicada para o controle preventivo de doenças causadas por fungos, como ferrugem, olho pardo, pinta preta, cercosporiose e requeima. A aplicação deve ser feita no mesmo dia do preparo da calda.</p>
+				</ion-item>
+
+				<ion-item class="item-divider item-text-wrap">
+					<h3>Tabela 1 – recomendação de aplicação de calda viçosa.</h3>
+				</ion-item>
+				<ion-item class="item-text-wrap item-table">
+					<div class="row">
+					   <div class="col">Cultura</div>
+					   <div class="col">Quando pulverizar a calda viçosa sobre as folhas das plantas?</div>
+					</div>
+					<div class="row">
+					   <div class="col">Hortaliças e frutíferas</div>
+					   <div class="col">A cada 15 dias</div>
+					 </div>
+				</ion-item>
+
+				<div class="card">
+					<ion-item class="item-divider item-text-wrap">
+						<h3>Importante!</h3>
+					</ion-item>
+					<ion-item class="item item-text-wrap">
+						<h3>A família das cucurbitáceas (abóboras, melão, pepino, melancia) e plantas em florescimento são sensíveis à aplicação da calda viçosa. <br/>
+							Neste caso, a sugestão é diminuir a 0,25% a calda já pronta em água (em 10 l de água coloque 25 ml de calda viçosa). <br/>
+							Aplique a calda em períodos frescos do dia, em horários de sombra, caso contrário poderá queimar as plantas.</h3>
+					</ion-item>
+				</div>
+			</div>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>
